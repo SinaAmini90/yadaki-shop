@@ -1,0 +1,103 @@
+li {
+  display: inline;
+  padding: 0 10px;
+}
+nav h1 {
+  color: #ff6f00;
+  margin: auto 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff6f00;
+}
+
+.navTop {
+  background-color: rgb(30, 40, 60);
+  padding: 10px 20px 45px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navButtom {
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  margin: 0 30px;
+  padding: 15px 20px;
+  background-color: rgb(40, 45, 75);
+}
+.navButtom div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-hr {
+  color: aliceblue;
+  margin: -35px 0 0 0;
+}
+
+button {
+  display: none;
+  border: 0;
+  background-color: rgb(40, 45, 75) !important;
+}
+address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-medias a {
+  padding: 0 5px;
+}
+.pages-nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  overflow: hidden;
+  transition: opacity 0.4s ease;
+}
+.pages-nav {
+  display: flex;
+  transition: max-height 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .pages-nav {
+    display: none !important;
+  }
+
+  .pages-nav.open {
+    display: flex !important;
+    width: 100%;
+    margin-top: 0px;
+    max-height: 200px;
+  }
+
+  .pages-nav ul {
+    overflow: hidden;
+    justify-content: end;
+    align-items: end;
+  }
+  .navButtom {
+    flex-direction: column;
+  }
+  address {
+    font-size: smaller;
+  }
+}
