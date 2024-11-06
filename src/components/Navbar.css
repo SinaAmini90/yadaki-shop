@@ -1,25 +1,25 @@
-li {
+nav li {
   display: inline;
   padding: 0 10px;
 }
 nav h1 {
-  color: #ff6f00;
+  color: var(--orange);
   margin: auto 0;
   text-align: center;
   font-size: 2em;
 }
 
-a {
+nav a {
   color: white;
   text-decoration: none;
 }
 
-a:hover {
-  color: #ff6f00;
+nav a:hover {
+  color: var(--orange);
 }
 
 .navTop {
-  background-color: rgb(30, 40, 60);
+  background-color: var(--darker-blue);
   padding: 10px 20px 45px;
   color: aliceblue;
   display: flex;
@@ -32,7 +32,7 @@ a:hover {
   flex-direction: row;
   margin: 0 30px;
   padding: 15px 20px;
-  background-color: rgb(40, 45, 75);
+  background-color: var(--dark-blue);
 }
 .navButtom div {
   display: flex;
@@ -44,12 +44,12 @@ a:hover {
   margin: -35px 0 0 0;
 }
 
-button {
+nav button {
   display: none;
   border: 0;
-  background-color: rgb(40, 45, 75) !important;
+  background-color: var(--dark-blue) !important;
 }
-address {
+nav address {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -63,41 +63,39 @@ address {
   flex-direction: row-reverse;
   justify-content: end;
   overflow: hidden;
-  transition: opacity 0.4s ease;
+  transition: all 0.8s ease;
 }
 .pages-nav {
   display: flex;
-  transition: max-height 0.5s ease;
+  transition: all 1s ease;
 }
 
 @media only screen and (max-width: 600px) {
-  button {
+  nav button {
     display: block;
     width: 40px;
     height: 40px;
     padding: 0;
   }
 
-  .pages-nav {
-    display: none !important;
-  }
-
   .pages-nav.open {
     display: flex !important;
+    flex-direction: row;
     width: 100%;
     margin-top: 0px;
-    max-height: 200px;
+    align-items: end;
+    justify-content: end;
   }
 
   .pages-nav ul {
-    overflow: hidden;
+    /* overflow: hidden; */
     justify-content: end;
     align-items: end;
   }
   .navButtom {
     flex-direction: column;
   }
-  address {
+  nav address {
     font-size: smaller;
   }
 }
