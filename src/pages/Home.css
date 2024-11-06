@@ -1,5 +1,6 @@
 .products-category-title span,
-.featured-products-title span {
+.featured-products-title span,
+.articles-title span {
   color: var(--orange);
 }
 .hero {
@@ -58,7 +59,9 @@
 /* Home.css */
 
 .products-category-title,
-.featured-products-title {
+.featured-products-title,
+.articles-title {
+  padding-top: 20px;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;

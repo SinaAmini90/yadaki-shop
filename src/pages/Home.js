@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ProductList from "../components/ProductList";
+import Articles from "../components/Articles.js";
 
 const Home = () => {
   const heroSliderSettings = {
@@ -74,12 +75,19 @@ const Home = () => {
           </a>
         </div>
       </section>
-      <section>
+      <section className="featured-products">
         <h2 className="featured-products-title">
           <span>Featured</span> Products
         </h2>
         <ProductList />
       </section>
+      <section className="articles">
+        <h2 className="articles-title">
+          Last<span> Articles</span>
+        </h2>
+        <Articles />
+      </section>
+
       <footer></footer>
     </div>
   );
