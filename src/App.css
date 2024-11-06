@@ -1,5 +1,12 @@
+:root {
+  --dark-blue: rgb(40, 45, 75);
+  --darker-blue: rgb(30, 40, 60);
+  --orange: #ff6f00;
+  --gray: #666;
+}
 .App {
   text-align: center;
+  background-color: black;
 }
 
 .App-logo {
