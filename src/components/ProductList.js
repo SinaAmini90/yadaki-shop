@@ -34,25 +34,64 @@ const products = [
       "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
     description: "description of product",
   },
+  {
+    id: 5,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+  },
+  {
+    id: 6,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+  },
+  {
+    id: 7,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+  },
+  {
+    id: 8,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+  },
 ];
 
 const ProductList = () => {
   return (
-    <div className="product-list">
-      {products.map((product) => (
-        <div className="product-card" key={product.id}>
-          {" "}
-          <img
-            src={product.image}
-            alt={product.name}
-            className="product-image"
-          />
-          <h2 className="product-name">{product.name}</h2>
-          {/* <button className="description">More Description</button> */}
-          <p className="product-price">${product.price.toFixed(2)}</p>
-          <button className="add-to-cart">Add to Cart</button>
-        </div>
-      ))}
+    <div className="product-list-container">
+      <div className="product-list">
+        {products.map((product) => (
+          <div className="product-card" key={product.id}>
+            {" "}
+            <img
+              src={product.image}
+              alt={product.name}
+              className="product-image"
+            />
+            <h2 className="product-name">{product.name}</h2>
+            {/* <button className="description">More Description</button> */}
+            <p className="product-price">${product.price.toFixed(2)}</p>
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+        ))}
+      </div>
+      <button id="all-products">
+        All
+        <br />
+        products{" "}
+      </button>
     </div>
   );
 };
