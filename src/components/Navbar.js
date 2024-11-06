@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "../App.css";
 import "./Navbar.css";
 import {
   FaPhone,
@@ -14,10 +15,16 @@ import {
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 600);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <nav>
@@ -83,10 +90,13 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className="pages-nav open"
-          style={{ maxHeight: menuOpen ? "200px" : "0" }}
+          // className={menuOpen ? "pages-nav" : "pages-nav open"}
+          className={"pages-nav"}
+          style={{
+            maxHeight: menuOpen || !isMobile ? "200px" : "0px",
+          }}
         >
-          <ul style={{ opacity: menuOpen ? "1" : "0" }}>
+          <ul style={{ opacity: menuOpen || !isMobile ? "1" : "0" }}>
             <li>
               <Link to="/">Home</Link>
             </li>
