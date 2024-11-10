@@ -1,12 +1,12 @@
 #article-container {
-  /* overflow: hidden; */
-  /* width: 100%; */
+  overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 .news-card {
-  height: 480px;
-  padding: 20px;
+  padding: 20px 20px 0px;
   text-align: center;
   box-sizing: border-box;
 }
