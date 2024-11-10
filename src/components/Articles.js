@@ -103,7 +103,7 @@ export default function Articles() {
                 <h3>{news.title}</h3>
                 <p className="news-summery">
                   {news.summary}
-                  <a href="/news"> Read More ...</a>
+                  <br /> <a href="/news"> Read More ...</a>
                 </p>
               </div>
             ))}
