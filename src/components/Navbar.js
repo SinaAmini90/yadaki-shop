@@ -90,7 +90,6 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          // className={menuOpen ? "pages-nav" : "pages-nav open"}
           className={"pages-nav"}
           style={{
             maxHeight: menuOpen || !isMobile ? "200px" : "0px",
