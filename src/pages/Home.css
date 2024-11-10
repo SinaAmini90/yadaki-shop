@@ -111,3 +111,16 @@
   margin: auto !important;
   text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+  .product {
+    min-width: 120px;
+    background-color: rgb(240, 240, 255);
+  }
+  .product img {
+    border: 5px solid var(--dark-blue);
+  }
+  .products-category-container {
+    width: 90vw;
+  }
+}
