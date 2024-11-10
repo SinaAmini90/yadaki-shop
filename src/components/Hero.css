@@ -1,0 +1,55 @@
+.hero {
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+.hero .slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.hero .slider-container {
+  padding-top: 20px;
+  overflow: hidden;
+}
+.hero .slick-slide img {
+  height: 70%;
+  width: 100%;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(10, 9, 9);
+  z-index: 10;
+}
+
+.hero .slick-prev,
+.hero .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0.8;
+}
+.hero .slick-prev:before,
+.hero .slick-next:before {
+  color: var(--dark-blue);
+}
+
+.hero .slick-prev {
+  left: 10px;
+}
+
+.hero .slick-next {
+  right: 20px;
+}
+
+.hero .slick-prev:before,
+.hero .slick-next:before {
+  font-size: 30px;
+}
