@@ -43,7 +43,7 @@ export default function Articles() {
   };
 
   return (
-    <div id="articles">
+    <div id="articles" className="articles">
       <section id="article-container">
         <div className="news-section">
           <Slider {...articleSettings}>
