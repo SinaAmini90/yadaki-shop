@@ -105,6 +105,9 @@ const Navbar = () => {
             <li>
               <Link to="/cart">Cart</Link>
             </li>
+            <li>
+              <Link to="/news">News</Link>
+            </li>
           </ul>
         </div>
       </section>
