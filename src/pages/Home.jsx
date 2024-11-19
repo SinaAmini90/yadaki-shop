@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
 import ProductList from "../components/ProductList";
-import Articles from "../components/Articles.js";
-import CategoryProduct from "../components/CategoryProduct.js";
-import Hero from "../components/Hero.js";
+import Articles from "../components/Articles.jsx";
+import CategoryProduct from "../components/CategoryProduct.jsx";
+import Hero from "../components/Hero.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
 
 const Home = () => {
