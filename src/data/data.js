@@ -84,5 +84,71 @@ const categoryData = [
   },
 ];
 
+const productsData = [
+  {
+    id: 1,
+    name: "Product 1",
+    price: 29.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png",
+    description: "description of product",
+  },
+  {
+    id: 2,
+    name: "Product 2",
+    price: 49.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png",
+    description: "description of product",
+  },
+  {
+    id: 3,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+  },
+  {
+    id: 4,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+  },
+  {
+    id: 5,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+  },
+  {
+    id: 6,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+  },
+  {
+    id: 7,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+  },
+  {
+    id: 8,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+  },
+];
 export default newsData;
-export { categoryData };
+export { categoryData, productsData };
