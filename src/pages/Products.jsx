@@ -1,12 +1,18 @@
 import React from "react";
 import ProductList from "../components/ProductList";
+import SectionTitle from "../components/SectionTitle";
 
 const Products = () => {
   return (
-    <div>
-      <h2>All Products</h2>
+    <>
+      <SectionTitle>
+        <p>
+          <span>All</span> Products
+        </p>
+      </SectionTitle>
+
       <ProductList />
-    </div>
+    </>
   );
 };
 
