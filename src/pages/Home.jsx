@@ -11,17 +11,17 @@ const Home = () => {
     <>
       <Hero />
 
-      <SectionTitle cssClass="section-title">
+      <SectionTitle>
         product <span>category</span>
       </SectionTitle>
       <CategoryProduct />
 
-      <SectionTitle cssClass="section-title">
+      <SectionTitle>
         <span>Featured</span> Products
       </SectionTitle>
       <ProductList featured />
 
-      <SectionTitle cssClass="section-title">
+      <SectionTitle>
         Last<span> Articles</span>
       </SectionTitle>
       <Articles />
