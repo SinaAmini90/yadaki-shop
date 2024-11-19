@@ -1,0 +1,15 @@
+.section-title span {
+  color: var(--orange);
+}
+.section-title {
+  padding-top: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin: 20px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
