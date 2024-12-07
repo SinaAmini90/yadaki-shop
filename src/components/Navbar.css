@@ -18,6 +18,10 @@ nav a:hover {
   color: var(--orange);
 }
 
+.nav-active {
+  color: var(--orange);
+}
+
 .navTop {
   background-color: var(--darker-blue);
   padding: 10px 20px 45px;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 import "./Navbar.css";
 import {
@@ -97,16 +97,44 @@ const Navbar = () => {
         >
           <ul style={{ opacity: menuOpen || !isMobile ? "1" : "0" }}>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "nav-active" : undefined
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/products">Products</Link>
+              <NavLink
+                to="/products"
+                className={({ isActive }) =>
+                  isActive ? "nav-active" : undefined
+                }
+              >
+                Products
+              </NavLink>
             </li>
             <li>
-              <Link to="/cart">Cart</Link>
+              <NavLink
+                to="/news"
+                className={({ isActive }) =>
+                  isActive ? "nav-active" : undefined
+                }
+              >
+                News
+              </NavLink>
             </li>
             <li>
-              <Link to="/news">News</Link>
+              <NavLink
+                to="/cart"
+                className={({ isActive }) =>
+                  isActive ? "nav-active" : undefined
+                }
+              >
+                Cart
+              </NavLink>
             </li>
           </ul>
         </div>
