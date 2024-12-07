@@ -49,6 +49,11 @@
 .add-to-cart:hover {
   background-color: #218838;
 }
+.add-to-cart:active {
+  background-color: #1c7830;
+  transform: scale(0.97);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
 
 .description {
   color: gray;

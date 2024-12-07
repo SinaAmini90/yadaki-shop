@@ -6,20 +6,23 @@ import Products from "./pages/Products.jsx";
 import Cart from "./pages/Cart.jsx";
 import Footer from "./components/Footer.jsx";
 import News from "./pages/News.jsx";
+import { CartContextProvider } from "./store/CartContext.jsx";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
+    <CartContextProvider>
+      <Router>
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/news" element={<News />} />
-      </Routes>
-      <Footer />
-    </Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/news" element={<News />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </CartContextProvider>
   );
 }
 
