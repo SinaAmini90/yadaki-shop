@@ -23,10 +23,20 @@ export default function Product({ ...props }) {
       <p className="description">More Description</p>
       <p className="product-price">${props.price.toFixed(2)}</p>
       {itemQuantity ? (
-        <div>
-          <Button onClick={() => handleAddProduct(props)}>+</Button>
-          <span>{itemQuantity || 0}</span>
-          <Button onClick={() => handleRemoveProduct(props.id)}>-</Button>
+        <div className="product-quantity-container">
+          <Button
+            onClick={() => handleRemoveProduct(props.id)}
+            cssClass="cart-quantity-button minus"
+          >
+            -
+          </Button>
+          <span className="1">{itemQuantity || 0}</span>
+          <Button
+            onClick={() => handleAddProduct(props)}
+            cssClass="cart-quantity-button plus"
+          >
+            +
+          </Button>
         </div>
       ) : (
         <Button onClick={() => handleAddProduct(props)} cssClass="add-to-cart">
