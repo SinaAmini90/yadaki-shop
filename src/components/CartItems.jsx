@@ -16,13 +16,16 @@ export default function Cart({ item, addFunc, removeFunc }) {
         <p>Price: ${item.price.toFixed(2)}</p>
         <div className="cart-item-quantity-container">
           <Button
-            cssClass="cart-quantity-button"
+            cssClass="cart-quantity-button minus"
             onClick={() => removeFunc(item.id)}
           >
             -
           </Button>
           <p>{item.quantity}</p>
-          <Button cssClass="cart-quantity-button" onClick={() => addFunc(item)}>
+          <Button
+            cssClass="cart-quantity-button plus"
+            onClick={() => addFunc(item)}
+          >
             +
           </Button>
         </div>{" "}
