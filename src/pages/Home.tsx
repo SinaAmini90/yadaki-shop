@@ -1,10 +1,9 @@
-import React from "react";
 import "./Home.css";
 import ProductList from "../components/ProductList";
-import Articles from "../components/Articles.jsx";
-import CategoryProduct from "../components/CategoryProduct.jsx";
-import Hero from "../components/Hero.jsx";
-import SectionTitle from "../components/SectionTitle.jsx";
+import Articles from "../components/Articles";
+import CategoryProduct from "../components/CategoryProduct";
+import Hero from "../components/Hero";
+import SectionTitle from "../components/SectionTitle";
 
 const Home = () => {
   return (

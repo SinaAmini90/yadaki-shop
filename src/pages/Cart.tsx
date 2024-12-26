@@ -1,9 +1,9 @@
-import { React, useContext } from "react";
-import CartContext from "../store/CartContext.jsx";
-import CartItems from "../components/CartItems.jsx";
-import SectionTitle from "../components/SectionTitle.jsx";
+import { useContext } from "react";
+import CartContext from "../store/CartContext";
+import CartItems from "../components/CartItems";
+import SectionTitle from "../components/SectionTitle";
 import "./Cart.css";
-import Button from "../components/Button.jsx";
+import Button from "../components/Button";
 import { Link } from "react-router-dom";
 
 export default function Cart() {
