@@ -1,6 +1,11 @@
-import React from "react";
+import { ButtonProps } from "../types";
 
-export default function Button({ textOnly, cssClass, children, ...props }) {
+const Button: React.FC<ButtonProps> = ({
+  textOnly,
+  cssClass,
+  children,
+  ...props
+}) => {
   let buttonMode = textOnly ? "text-button" : " ";
   buttonMode += cssClass;
   return (
@@ -8,4 +13,6 @@ export default function Button({ textOnly, cssClass, children, ...props }) {
       {children}
     </button>
   );
-}
+};
+
+export default Button;

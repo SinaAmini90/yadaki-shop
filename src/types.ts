@@ -25,3 +25,10 @@ export interface CartContextType {
 export interface ChildrenType {
   children: ReactNode;
 }
+
+//component prop types
+export interface ButtonProps {
+  textOnly: boolean;
+  cssClass: string;
+  [key: string]: any;
+}
