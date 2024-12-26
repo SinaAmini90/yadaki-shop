@@ -1,9 +1,9 @@
-import React from "react";
 import "./ProductList.css";
 import { productsData as products } from "../data/data.js";
-import Product from "./Product.jsx";
+import Product from "./Product.js";
+import { ProductListProps } from "../types";
 
-export default function ProductList({ featured }) {
+const ProductList: React.FC<ProductListProps> = ({ featured }) => {
   //fetch data from backend
   // const [loadedProducts, setLoadedProducts] = setState([]);
   // useEffect(() => {
@@ -33,4 +33,6 @@ export default function ProductList({ featured }) {
       </div>
     </div>
   );
-}
+};
+
+export default ProductList;

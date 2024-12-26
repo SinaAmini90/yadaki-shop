@@ -27,7 +27,7 @@ export interface ChildrenType {
   children: ReactNode;
 }
 
-//component prop types
+//prop types
 export interface ButtonProps {
   textOnly: boolean;
   cssClass: string;
@@ -38,4 +38,8 @@ export interface CartProps {
   item: ProductItem;
   addFunc: (item: ProductItem) => void;
   removeFunc: (id: number) => void;
+}
+
+export interface ProductListProps {
+  featured: boolean;
 }

@@ -10,7 +10,7 @@ const Products = () => {
         </p>
       </SectionTitle>
 
-      <ProductList />
+      <ProductList featured={false} />
     </>
   );
 };

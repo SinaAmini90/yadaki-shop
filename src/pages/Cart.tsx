@@ -38,7 +38,9 @@ export default function Cart() {
             </ul>
             <div className="cart-list cart-summary ">
               <span>Total price: ${totalAmount.toFixed(2)}</span>
-              <Button cssClass="add-to-cart">continue to checkout</Button>
+              <Button cssClass="add-to-cart" textOnly={false}>
+                continue to checkout
+              </Button>
             </div>
           </>
         )}

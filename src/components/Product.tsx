@@ -1,16 +1,17 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./Product.css";
 import Button from "./Button";
-import CartContext from "../store/CartContext.jsx";
+import CartContext from "../store/CartContext.js";
+import { ProductItem } from "../types";
 
-export default function Product({ ...props }) {
+const Product: React.FC<ProductItem> = ({ ...props }) => {
   const cartCtx = useContext(CartContext);
   console.log("items", cartCtx.items);
 
-  function handleAddProduct(product) {
+  function handleAddProduct(product: ProductItem) {
     cartCtx.addItem(product);
   }
-  function handleRemoveProduct(id) {
+  function handleRemoveProduct(id: number) {
     cartCtx.removeItem(id);
   }
   const itemQuantity = cartCtx.items.find(
@@ -27,6 +28,7 @@ export default function Product({ ...props }) {
           <Button
             onClick={() => handleRemoveProduct(props.id)}
             cssClass="cart-quantity-button minus"
+            textOnly={false}
           >
             -
           </Button>
@@ -34,15 +36,21 @@ export default function Product({ ...props }) {
           <Button
             onClick={() => handleAddProduct(props)}
             cssClass="cart-quantity-button plus"
+            textOnly={false}
           >
             +
           </Button>
         </div>
       ) : (
-        <Button onClick={() => handleAddProduct(props)} cssClass="add-to-cart">
+        <Button
+          onClick={() => handleAddProduct(props)}
+          cssClass="add-to-cart"
+          textOnly={false}
+        >
           Add to Cart
         </Button>
       )}
     </li>
   );
-}
+};
+export default Product;
