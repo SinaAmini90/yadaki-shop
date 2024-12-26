@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../App.css";
 import "./Navbar.css";
@@ -13,7 +13,7 @@ import {
   FaBars,
 } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar: React.FC<any> = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 
@@ -31,14 +31,7 @@ const Navbar = () => {
       <section className="navTop">
         <address>
           <FaPhone size={16} />
-          <span
-            style={{
-              "border-right": "1px solid white",
-              "padding-right": "15px",
-            }}
-          >
-            09134237637
-          </span>
+          <span className="nav-phone-number">09134237637</span>
 
           <FaEnvelope size={16} />
           <span>siyam1990@gmail.com</span>
