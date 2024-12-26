@@ -22,7 +22,7 @@ export default function ProductList({ featured }) {
       <div className="product-list-container">
         <ul className="product-list">
           {products.map((product) => (
-            <Product {...product} />
+            <Product key={product.id} {...product} />
           ))}
         </ul>
         <button id="all-products">

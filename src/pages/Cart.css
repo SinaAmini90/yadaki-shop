@@ -1,7 +1,30 @@
+.cart-container {
+  text-align: center;
+}
 .cart-list {
-  flex-direction: column;
-  display: flex;
+  box-sizing: border-box;
+  width: fit-content;
   list-style: none;
   padding: 0;
-  margin: 20px;
+  margin: auto;
+}
+
+.cart-summary {
+  text-align: end;
+  width: 70vw;
+  background-color: rgb(220, 220, 255);
+  border-radius: 20px;
+  padding: 15px;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+
+.cart-summary button {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .cart-summary {
+    width: 85vw;
+  }
 }
