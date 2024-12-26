@@ -84,5 +84,79 @@ const categoryData = [
   },
 ];
 
+const productsData = [
+  {
+    id: 1,
+    name: "Product 1",
+    price: 29.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png",
+    description: "description of product",
+    quantity: 0,
+  },
+  {
+    id: 2,
+    name: "Product 2",
+    price: 49.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png",
+    description: "description of product",
+    quantity: 0,
+  },
+  {
+    id: 3,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+    quantity: 0,
+  },
+  {
+    id: 4,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+    quantity: 0,
+  },
+  {
+    id: 5,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+    quantity: 0,
+  },
+  {
+    id: 6,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+    quantity: 0,
+  },
+  {
+    id: 7,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+    quantity: 0,
+  },
+  {
+    id: 8,
+    name: "Product 3",
+    price: 19.99,
+    image:
+      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
+    description: "description of product",
+    quantity: 0,
+  },
+];
 export default newsData;
-export { categoryData };
+export { categoryData, productsData };

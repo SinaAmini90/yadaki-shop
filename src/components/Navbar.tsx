@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 import "./Navbar.css";
 import {
@@ -13,7 +13,7 @@ import {
   FaBars,
 } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar: React.FC<any> = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 
@@ -31,14 +31,7 @@ const Navbar = () => {
       <section className="navTop">
         <address>
           <FaPhone size={16} />
-          <span
-            style={{
-              "border-right": "1px solid white",
-              "padding-right": "15px",
-            }}
-          >
-            09134237637
-          </span>
+          <span className="nav-phone-number">09134237637</span>
 
           <FaEnvelope size={16} />
           <span>siyam1990@gmail.com</span>
@@ -97,13 +90,44 @@ const Navbar = () => {
         >
           <ul style={{ opacity: menuOpen || !isMobile ? "1" : "0" }}>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "nav-active" : undefined
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/products">Products</Link>
+              <NavLink
+                to="/products"
+                className={({ isActive }) =>
+                  isActive ? "nav-active" : undefined
+                }
+              >
+                Products
+              </NavLink>
             </li>
             <li>
-              <Link to="/cart">Cart</Link>
+              <NavLink
+                to="/news"
+                className={({ isActive }) =>
+                  isActive ? "nav-active" : undefined
+                }
+              >
+                News
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/cart"
+                className={({ isActive }) =>
+                  isActive ? "nav-active" : undefined
+                }
+              >
+                Cart
+              </NavLink>
             </li>
           </ul>
         </div>

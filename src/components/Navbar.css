@@ -18,6 +18,10 @@ nav a:hover {
   color: var(--orange);
 }
 
+.nav-active {
+  color: var(--orange);
+}
+
 .navTop {
   background-color: var(--darker-blue);
   padding: 10px 20px 45px;
@@ -33,6 +37,7 @@ nav a:hover {
   margin: 0 30px;
   padding: 15px 20px;
   background-color: var(--dark-blue);
+  border-radius: 10px;
 }
 .navButtom div {
   display: flex;
@@ -42,6 +47,10 @@ nav a:hover {
 .nav-hr {
   color: aliceblue;
   margin: -35px 0 0 0;
+}
+.nav-phone-number {
+  border: right 1px solid white;
+  padding: right 15px;
 }
 
 nav button {
