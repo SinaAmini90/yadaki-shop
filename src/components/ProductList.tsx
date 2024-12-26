@@ -1,6 +1,6 @@
 import "./ProductList.css";
 import { productsData as products } from "../data/data.js";
-import Product from "./Product.js";
+import Product from "./Product";
 import { ProductListProps } from "../types";
 
 const ProductList: React.FC<ProductListProps> = ({ featured }) => {

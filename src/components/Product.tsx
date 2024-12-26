@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "./Product.css";
 import Button from "./Button";
-import CartContext from "../store/CartContext.js";
+import CartContext from "../store/CartContext";
 import { ProductItem } from "../types";
 
 const Product: React.FC<ProductItem> = ({ ...props }) => {
