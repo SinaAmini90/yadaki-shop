@@ -6,6 +6,7 @@ export type ProductItem = {
   description: string;
   price: number;
   quantity: number;
+  image: string;
 };
 
 export interface CartState {
@@ -31,4 +32,10 @@ export interface ButtonProps {
   textOnly: boolean;
   cssClass: string;
   [key: string]: any;
+}
+
+export interface CartProps {
+  item: ProductItem;
+  addFunc: (item: ProductItem) => void;
+  removeFunc: (id: number) => void;
 }
