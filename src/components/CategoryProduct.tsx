@@ -1,4 +1,3 @@
-import React from "react";
 import "./CategoryProduct.css";
 import { categoryData } from "../data/data.js";
 
