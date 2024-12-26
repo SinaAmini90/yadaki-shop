@@ -1,12 +1,11 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-import Home from "./pages/Home.jsx";
-import Products from "./pages/Products.jsx";
-import Cart from "./pages/Cart.jsx";
-import Footer from "./components/Footer.jsx";
-import News from "./pages/News.jsx";
-import { CartContextProvider } from "./store/CartContext.jsx";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Cart from "./pages/Cart";
+import Footer from "./components/Footer";
+import News from "./pages/News";
+import { CartContextProvider } from "./store/CartContext";
 
 function App() {
   return (
