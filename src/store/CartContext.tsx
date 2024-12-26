@@ -1,14 +1,20 @@
 import { type } from "@testing-library/user-event/dist/type";
-import React, { useReducer } from "react";
-import { createContext } from "react";
+import { useReducer, createContext } from "react";
+import {
+  ProductItem,
+  CartState,
+  CartAction,
+  CartContextType,
+  ChildrenType,
+} from "../types";
 
-const CartContext = createContext({
+const CartContext = createContext<CartContextType>({
   items: [],
   addItem: (item) => {},
   removeItem: (id) => {},
 });
 
-function cartReducer(state, action) {
+function cartReducer(state: CartState, action: CartAction) {
   switch (action.type) {
     case "ADD_ITEM": {
       const existingItemIndex = state.items.findIndex(
@@ -51,17 +57,17 @@ function cartReducer(state, action) {
   }
 }
 
-export function CartContextProvider({ children }) {
+export function CartContextProvider({ children }: ChildrenType) {
   const [cart, dispach] = useReducer(cartReducer, { items: [] });
   const cartContext = {
     items: cart.items,
     addItem,
     removeItem,
   };
-  function addItem(item) {
+  function addItem(item: ProductItem) {
     dispach({ type: "ADD_ITEM", item });
   }
-  function removeItem(id) {
+  function removeItem(id: number) {
     dispach({ type: "REMOVE_ITEM", id });
   }
   return (
