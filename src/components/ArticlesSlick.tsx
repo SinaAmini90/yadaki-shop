@@ -1,11 +1,11 @@
-import "./Articles.css";
+import "./ArticlesSlick.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import newsData from "../data/data";
 
 import Slider from "react-slick";
 
-export default function Articles() {
+export default function ArticlesSlick() {
   let articleSettings = {
     dots: true,
     infinite: false,
@@ -42,15 +42,19 @@ export default function Articles() {
   };
 
   return (
-    <div id="articles" className="articles">
-      <section id="article-container">
-        <div className="news-section">
+    <div id="slick-articles" className="slick-articles">
+      <section id="slick-article-container">
+        <div className="slick-news-section">
           <Slider {...articleSettings}>
             {newsData.map((news, index) => (
-              <div key={index} className="news-card">
-                <img src={news.image} alt={news.title} className="news-image" />
+              <div key={index} className="slick-news-card">
+                <img
+                  src={news.image}
+                  alt={news.title}
+                  className="slick-news-image"
+                />
                 <h3>{news.title}</h3>
-                <p className="news-summery">
+                <p className="slick-news-summery">
                   {news.summary}
                   <br /> <a href="/news"> Read More ...</a>
                 </p>
