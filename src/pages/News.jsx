@@ -1,5 +1,12 @@
-import React from "react";
-
+import ArticlesList from "../components/ArticlesList";
+import SectionTitle from "../components/SectionTitle";
 export default function News() {
-  return <div>News</div>;
+  return (
+    <>
+      <SectionTitle>
+        <span>latest</span> Articles
+      </SectionTitle>
+      <ArticlesList />
+    </>
+  );
 }
