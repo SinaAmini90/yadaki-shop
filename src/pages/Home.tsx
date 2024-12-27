@@ -1,6 +1,6 @@
 import "./Home.css";
 import ProductList from "../components/ProductList";
-import Articles from "../components/Articles";
+import ArticlesSlick from "../components/ArticlesSlick";
 import CategoryProduct from "../components/CategoryProduct";
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
@@ -23,7 +23,7 @@ const Home = () => {
       <SectionTitle>
         Last<span> Articles</span>
       </SectionTitle>
-      <Articles />
+      <ArticlesSlick />
     </>
   );
 };
