@@ -87,6 +87,7 @@ const categoryData = [
 const productsData = [
   {
     id: 1,
+    category: "Rubber-Metal Mount",
     name: "Product 1",
     price: 29.99,
     image:
@@ -96,6 +97,7 @@ const productsData = [
   },
   {
     id: 2,
+    category: "Front Axle Right",
     name: "Product 2",
     price: 49.99,
     image:
@@ -105,6 +107,7 @@ const productsData = [
   },
   {
     id: 3,
+    category: "Fitting Position",
     name: "Product 3",
     price: 19.99,
     image:
@@ -114,6 +117,7 @@ const productsData = [
   },
   {
     id: 4,
+    category: "Fitting Position",
     name: "Product 3",
     price: 19.99,
     image:
@@ -123,6 +127,7 @@ const productsData = [
   },
   {
     id: 5,
+    category: "Rubber-Metal Mount",
     name: "Product 3",
     price: 19.99,
     image:
@@ -132,6 +137,7 @@ const productsData = [
   },
   {
     id: 6,
+    category: "Rubber-Metal Mount",
     name: "Product 3",
     price: 19.99,
     image:
@@ -141,6 +147,7 @@ const productsData = [
   },
   {
     id: 7,
+    category: "Rubber-Metal Mount",
     name: "Product 3",
     price: 19.99,
     image:
@@ -150,6 +157,7 @@ const productsData = [
   },
   {
     id: 8,
+    category: "Stabilizer Link",
     name: "Product 3",
     price: 19.99,
     image:
