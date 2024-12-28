@@ -34,12 +34,14 @@ export default function ArticlesDetailed() {
   };
   return (
     <section id="article-container" className="article-container">
-      <input
-        type="text"
-        value={searchQuery}
-        onChange={(e) => handleSearch(e)}
-        placeholder="search..."
-      ></input>
+      <section className="search-bar">
+        <input
+          type="text"
+          value={searchQuery}
+          onChange={(e) => handleSearch(e)}
+          placeholder="search..."
+        ></input>
+      </section>
       <div className="news-section">
         {searchedData.length === 0 ? (
           <p className="no-results-message">Nothing matches "{searchQuery}"</p>
