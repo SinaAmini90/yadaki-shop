@@ -15,7 +15,7 @@ export default function Cart() {
   }, 0);
 
   return (
-    <div>
+    <>
       <SectionTitle>
         <span>Shopping</span> Cart
       </SectionTitle>
@@ -45,6 +45,6 @@ export default function Cart() {
           </>
         )}
       </section>
-    </div>
+    </>
   );
 }

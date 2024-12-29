@@ -6,7 +6,6 @@ import { ProductItem } from "../types";
 
 const Product: React.FC<ProductItem> = ({ ...props }) => {
   const cartCtx = useContext(CartContext);
-  console.log("items", cartCtx.items);
 
   function handleAddProduct(product: ProductItem) {
     cartCtx.addItem(product);
