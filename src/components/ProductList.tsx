@@ -1,18 +1,25 @@
 import "./ProductList.css";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { categoryData, productsData as products } from "../data/data.js";
 import Product from "./Product";
 import { ProductListProps } from "../types";
+import { NavLink, useLocation } from "react-router-dom";
 
 const ProductList: React.FC<ProductListProps> = ({ featured }) => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const { state } = useLocation();
+
+  useEffect(() => {
+    if (state?.selectedCategory) {
+      setSelectedCategory(state.selectedCategory);
+    }
+  }, [state]);
 
   const handleFilter = (e: React.ChangeEvent<HTMLInputElement>) => {
     const query = e.target.value.toLowerCase();
     setSearchQuery(query);
   };
-
-  const [selectedCategory, setSelectedCategory] = useState("all");
 
   const filteredProducts = useMemo(() => {
     return selectedCategory === "all"
@@ -51,11 +58,11 @@ const ProductList: React.FC<ProductListProps> = ({ featured }) => {
             <Product key={product.id} {...product} />
           ))}
         </ul>
-        <button id="all-products">
+        <NavLink to="/products" id="all-products">
           All
           <br />
           products
-        </button>
+        </NavLink>
       </div>
     </div>
   );

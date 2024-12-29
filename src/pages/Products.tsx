@@ -5,9 +5,7 @@ const Products = () => {
   return (
     <>
       <SectionTitle>
-        <p>
-          <span>All</span> Products
-        </p>
+        <span>All</span> Products
       </SectionTitle>
 
       <ProductList featured={false} />
