@@ -1,13 +1,14 @@
 .article-container {
   max-width: 1200px;
   margin: auto;
-  padding: 28px;
+  padding: 0 28px 28px;
 }
 
 .news-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 16px 0;
 }
 
 .news-card {
