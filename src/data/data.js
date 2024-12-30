@@ -51,36 +51,24 @@ const newsData = [
 
 const categoryData = [
   {
-    image: "/images/category1.webp",
-    title: "TONGLI CODE",
+    image: "/images/dmICON.png",
+    title: "دسته موتور",
   },
   {
-    image: "/images/category2.webp",
-    title: "Stabilizer Link",
+    image: "/images/dtICON.png",
+    title: "درب ترموستات",
   },
   {
-    image: "/images/category3.webp",
-    title: "Front Axle Right",
+    image: "/images/oringICON.png",
+    title: "واشر و اورینگ",
   },
   {
-    image: "/images/category4.webp",
-    title: "Product Group",
+    image: "/images/btICON.png",
+    title: "بوش طبق",
   },
   {
-    image: "/images/category5.webp",
-    title: "Front Axle",
-  },
-  {
-    image: "/images/category3.webp",
-    title: "Fitting Position",
-  },
-  {
-    image: "/images/category2.webp",
-    title: "Front Axle Right",
-  },
-  {
-    image: "/images/category1.webp",
-    title: "Rubber-Metal Mount",
+    image: "/images/meICON.png",
+    title: "منجید اگزوز",
   },
 ];
 

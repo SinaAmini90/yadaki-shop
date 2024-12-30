@@ -4,7 +4,7 @@ const productsData = [
     category: "دسته موتور",
     name: "دسته موتور پایین راست رانا",
     price: 0,
-    image: "/images/RUNNADMPR.png", // Update this with actual image path
+    image: "/images/RUNNADMPR.png",
     description: {
       material: "آلومینیوم",
       weight: 1350,
@@ -18,7 +18,7 @@ const productsData = [
     category: "دسته موتور",
     name: "دسته موتور پایین راست سمند EF7",
     price: 0,
-    image: "/images/SAMANDEF7DMPR.png", // Update this with actual image path
+    image: "/images/SAMANDEF7DMPR.png",
     description: {
       material: "آلومینیوم",
       weight: 1800,
@@ -32,7 +32,7 @@ const productsData = [
     category: "دسته موتور",
     name: "دسته موتور پایین راست پژو 206 تیپ 5 و 6",
     price: 0,
-    image: "/images/206T5T6DMPR.png", // Update this with actual image path
+    image: "/images/206T5T6DMPR.png",
     description: {
       material: "آلومینیوم",
       weight: 1200,
@@ -43,10 +43,10 @@ const productsData = [
   },
   {
     id: 4,
-    category: "اورینگ",
+    category: "واشر و اورینگ",
     name: "اورینگ دریچه گاز رنو L90",
     price: 0,
-    image: "/images/ORingL90.png", // Update this with actual image path
+    image: "/images/ORingL90.png",
     description: {
       material: "لاستیک",
       weight: 4,
@@ -57,10 +57,10 @@ const productsData = [
   },
   {
     id: 5,
-    category: "اورینگ",
+    category: "واشر و اورینگ",
     name: "اورینگ ترموستات پژو",
     price: 0,
-    image: "/images/PEJOThermostatO-ring.png", // Update this with actual image path
+    image: "/images/PEJOThermostatO-ring.png",
     description: {
       material: "لاستیک",
       weight: 4,
@@ -74,7 +74,7 @@ const productsData = [
     category: "درب ترموستات",
     name: "درب ترموستات پراید کاربراتوری",
     price: 0,
-    image: "/images/PRIDECDT.png", // Update this with actual image path
+    image: "/images/PRIDECDT.png",
     description: {
       material: "فلز",
       weight: 105,
@@ -88,7 +88,7 @@ const productsData = [
     category: "درب ترموستات",
     name: "درب ترموستات پیکان",
     price: 0,
-    image: "/images/PEYKANDT.png", // Update this with actual image path
+    image: "/images/PEYKANDT.png",
     description: {
       material: "فلز",
       weight: 80,
@@ -102,7 +102,7 @@ const productsData = [
     category: "درب ترموستات",
     name: "درب ترموستات رنو L90 فابریک",
     price: 0,
-    image: "/images/RenaultL90DTF.png", // Update this with actual image path
+    image: "/images/RenaultL90DTF.png",
     description: {
       material: "فلز",
       weight: 60,
@@ -116,7 +116,7 @@ const productsData = [
     category: "درب ترموستات",
     name: "درب ترموستات رنو L90 آلومینیومی",
     price: 0,
-    image: "/images/RenaultL90DTA.png", // Update this with actual image path
+    image: "/images/RenaultL90DTA.png",
     description: {
       material: "آلومینیوم",
       weight: 100,
@@ -130,7 +130,7 @@ const productsData = [
     category: "دسته موتور",
     name: "دسته موتور پا مرغی رنو L90",
     price: 0,
-    image: "/images/RenaultL90DMP.png", // Update this with actual image path
+    image: "/images/RenaultL90DMP.png",
     description: {
       material: "آلومینیوم",
       weight: 680,
@@ -144,7 +144,7 @@ const productsData = [
     category: "بوش طبق",
     name: "بوش طبق جناقی پژو",
     price: 0,
-    image: "/images/Peugeot1800BTJ.png", // Update this with actual image path
+    image: "/images/Peugeot1800BTJ.png",
     description: {
       material: "آلومینیوم",
       weight: 425,
@@ -158,7 +158,7 @@ const productsData = [
     category: "درب ترموستات",
     name: "درب ترموستات سمند EF7",
     price: 0,
-    image: "/images/SAMANDEF7DT.png", // Update this with actual image path
+    image: "/images/SAMANDEF7DT.png",
     description: {
       material: "فلز",
       weight: 80,
@@ -169,10 +169,10 @@ const productsData = [
   },
   {
     id: 13,
-    category: "سه راهی آب",
+    category: "درب ترموستات",
     name: "سه راهی آب وانت نیسان",
     price: 0,
-    image: "/images/NissanJunior3RA.png", // Update this with actual image path
+    image: "/images/NissanJunior3RA.png",
     description: {
       material: "فلز",
       weight: 120,
@@ -186,7 +186,7 @@ const productsData = [
     category: "درب ترموستات",
     name: "درب ترموستات وانت نیسان",
     price: 0,
-    image: "/images/NissanJuniorDT.png", // Update this with actual image path
+    image: "/images/NissanJuniorDT.png",
     description: {
       material: "فلز",
       weight: 85,
@@ -200,7 +200,7 @@ const productsData = [
     category: "درب ترموستات",
     name: "درب ترموستات پراید یورو 4",
     price: 0,
-    image: "/images/PRIDEE4DT.png", // Update this with actual image path
+    image: "/images/PRIDEE4DT.png",
     description: {
       material: "فلز",
       weight: 105,
@@ -211,10 +211,10 @@ const productsData = [
   },
   {
     id: 16,
-    category: "بست لاستیکی",
+    category: "منجید اگزوز",
     name: "بست لاستیکی اگزوز پراید",
     price: 0,
-    image: "/images/PRIDEBLE.png", // Update this with actual image path
+    image: "/images/PRIDEBLE.png",
     description: {
       material: "لاستیک",
       weight: 60,
@@ -228,7 +228,7 @@ const productsData = [
     category: "درب ترموستات",
     name: "درب ترموستات پژو 405 انژکتوری",
     price: 0,
-    image: "/images/PEUGEOT1800DT.png", // Update this with actual image path
+    image: "/images/PEUGEOT1800DT.png",
     description: {
       material: "فلز",
       weight: 130,
@@ -239,10 +239,10 @@ const productsData = [
   },
   {
     id: 18,
-    category: "پایه نگهدارنده دسته موتور",
+    category: "دسته موتور",
     name: "پایه نگهدارنده دسته موتور راست پژو 206 تیپ 5 و 6",
     price: 0,
-    image: "/images/206T5T6PNDM.png", // Update this with actual image path
+    image: "/images/206T5T6PNDM.png",
     description: {
       material: "آلومینیوم",
       weight: 4000,
@@ -257,7 +257,7 @@ const productsData = [
     category: "درب ترموستات",
     name: "درب ترموستات پژو 206 تیپ 5 و 6",
     price: 0,
-    image: "/images/206T5T6DT.png", // Update this with actual image path
+    image: "/images/206T5T6DT.png",
     description: {
       material: "فلز",
       weight: 80,
@@ -271,7 +271,7 @@ const productsData = [
     category: "درب ترموستات",
     name: "درب ترموستات پژو 206 تیپ 2 و 3",
     price: 0,
-    image: "/images/206T2T3DT.png", // Update this with actual image path
+    image: "/images/206T2T3DT.png",
     description: {
       material: "فلز",
       weight: 80,
