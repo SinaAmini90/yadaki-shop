@@ -9,7 +9,7 @@ const Cart: React.FC<CartProps> = ({ item, addFunc, removeFunc }) => {
         <img src={item.image} alt={item.name} />
         <div className="cart-item-decription-container">
           <h3>{item.name}</h3>
-          <h4>{item.description}</h4>
+          <p>مناسب برای: {item.description.compatibleCar}</p>
         </div>
       </div>
       <div className="cart-item-price-container">

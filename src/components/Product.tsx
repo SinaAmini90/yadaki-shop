@@ -18,37 +18,41 @@ const Product: React.FC<ProductItem> = ({ ...props }) => {
   )?.quantity;
   return (
     <li className="product-card" key={props.id}>
-      <img src={props.image} alt={props.name} className="product-image" />
-      <h2 className="product-name">{props.name}</h2>
-      <p className="description">More Description</p>
-      <p className="product-price">${props.price.toFixed(2)}</p>
-      {itemQuantity ? (
-        <div className="product-quantity-container">
-          <Button
-            onClick={() => handleRemoveProduct(props.id)}
-            cssClass="cart-quantity-button minus"
-            textOnly={false}
-          >
-            -
-          </Button>
-          <span className="1">{itemQuantity || 0}</span>
+      <div>
+        <img src={props.image} alt={props.name} className="product-image" />
+        <h2 className="product-name">{props.name}</h2>
+        <p className="description">{props.description.material}</p>
+      </div>
+      <div>
+        <p className="product-price">${props.price.toFixed(2)}</p>
+        {itemQuantity ? (
+          <div className="product-quantity-container">
+            <Button
+              onClick={() => handleRemoveProduct(props.id)}
+              cssClass="cart-quantity-button minus"
+              textOnly={false}
+            >
+              -
+            </Button>
+            <span className="1">{itemQuantity || 0}</span>
+            <Button
+              onClick={() => handleAddProduct(props)}
+              cssClass="cart-quantity-button plus"
+              textOnly={false}
+            >
+              +
+            </Button>
+          </div>
+        ) : (
           <Button
             onClick={() => handleAddProduct(props)}
-            cssClass="cart-quantity-button plus"
+            cssClass="add-to-cart"
             textOnly={false}
           >
-            +
+            Add to Cart
           </Button>
-        </div>
-      ) : (
-        <Button
-          onClick={() => handleAddProduct(props)}
-          cssClass="add-to-cart"
-          textOnly={false}
-        >
-          Add to Cart
-        </Button>
-      )}
+        )}
+      </div>
     </li>
   );
 };
