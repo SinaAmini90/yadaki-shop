@@ -1,10 +1,15 @@
 import { ReactNode } from "react";
-
+type Description = {
+  material: string;
+  weight: number;
+  productionMethod: string;
+  compatibleCar: string;
+};
 export type ProductItem = {
   id: number;
   category: string;
   name: string;
-  description: string;
+  description: Description;
   price: number;
   quantity: number;
   image: string;
