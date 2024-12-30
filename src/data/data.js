@@ -51,120 +51,26 @@ const newsData = [
 
 const categoryData = [
   {
-    image: "/images/category1.webp",
-    title: "TONGLI CODE",
+    image: "/images/dmICON.png",
+    title: "دسته موتور",
   },
   {
-    image: "/images/category2.webp",
-    title: "Stabilizer Link",
+    image: "/images/dtICON.png",
+    title: "درب ترموستات",
   },
   {
-    image: "/images/category3.webp",
-    title: "Front Axle Right",
+    image: "/images/oringICON.png",
+    title: "واشر و اورینگ",
   },
   {
-    image: "/images/category4.webp",
-    title: "Product Group",
+    image: "/images/btICON.png",
+    title: "بوش طبق",
   },
   {
-    image: "/images/category5.webp",
-    title: "Front Axle",
-  },
-  {
-    image: "/images/category3.webp",
-    title: "Fitting Position",
-  },
-  {
-    image: "/images/category2.webp",
-    title: "Front Axle Right",
-  },
-  {
-    image: "/images/category1.webp",
-    title: "Rubber-Metal Mount",
+    image: "/images/meICON.png",
+    title: "منجید اگزوز",
   },
 ];
 
-const productsData = [
-  {
-    id: 1,
-    category: "Rubber-Metal Mount",
-    name: "Product 1",
-    price: 29.99,
-    image:
-      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png",
-    description: "description of product",
-    quantity: 0,
-  },
-  {
-    id: 2,
-    category: "Front Axle Right",
-    name: "Product 2",
-    price: 49.99,
-    image:
-      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png",
-    description: "description of product",
-    quantity: 0,
-  },
-  {
-    id: 3,
-    category: "Fitting Position",
-    name: "Product 3",
-    price: 19.99,
-    image:
-      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
-    description: "description of product",
-    quantity: 0,
-  },
-  {
-    id: 4,
-    category: "Fitting Position",
-    name: "Product 3",
-    price: 19.99,
-    image:
-      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
-    description: "description of product",
-    quantity: 0,
-  },
-  {
-    id: 5,
-    category: "Rubber-Metal Mount",
-    name: "Product 3",
-    price: 19.99,
-    image:
-      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
-    description: "description of product",
-    quantity: 0,
-  },
-  {
-    id: 6,
-    category: "Rubber-Metal Mount",
-    name: "Product 3",
-    price: 19.99,
-    image:
-      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
-    description: "description of product",
-    quantity: 0,
-  },
-  {
-    id: 7,
-    category: "Rubber-Metal Mount",
-    name: "Product 3",
-    price: 19.99,
-    image:
-      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
-    description: "description of product",
-    quantity: 0,
-  },
-  {
-    id: 8,
-    category: "Stabilizer Link",
-    name: "Product 3",
-    price: 19.99,
-    image:
-      "https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png",
-    description: "description of product",
-    quantity: 0,
-  },
-];
 export default newsData;
-export { categoryData, productsData };
+export { categoryData };

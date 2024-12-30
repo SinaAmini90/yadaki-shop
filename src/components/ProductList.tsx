@@ -1,6 +1,7 @@
 import "./ProductList.css";
 import { useState, useMemo, useEffect } from "react";
-import { categoryData, productsData as products } from "../data/data.js";
+import { categoryData } from "../data/data.js";
+import productsData from "../data/productsData.js";
 import Product from "./Product";
 import { ProductListProps } from "../types";
 import { NavLink, useLocation } from "react-router-dom";
@@ -23,15 +24,15 @@ const ProductList: React.FC<ProductListProps> = ({ featured }) => {
 
   const filteredProducts = useMemo(() => {
     return selectedCategory === "all"
-      ? products.filter((product) =>
+      ? productsData.filter((product) =>
           product.name.toLowerCase().includes(searchQuery.toLowerCase())
         )
-      : products.filter(
+      : productsData.filter(
           (product) =>
             product.category === selectedCategory &&
             product.name.toLowerCase().includes(searchQuery.toLowerCase())
         );
-  }, [selectedCategory, products, searchQuery]);
+  }, [selectedCategory, productsData, searchQuery]);
 
   return (
     <div className={featured ? "featured-products" : "article-container"}>

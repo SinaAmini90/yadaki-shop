@@ -1,4 +1,7 @@
 .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: rgb(220, 220, 255);
   border-radius: 20px;
   width: 130px;
@@ -12,14 +15,12 @@
 }
 
 .product-image {
-  max-width: 100px;
-  height: auto;
-  margin: 5px;
+  width: fill;
 }
 
 .product-name {
   border-top: 2px solid white;
-  padding-top: 10px;
+  padding-top: 8px;
   font-size: 1.2em;
   margin: 10px 0 0;
   transition: all 0.5s;
@@ -30,7 +31,7 @@
 }
 
 .product-price {
-  margin: 15px 0 5px 0;
+  margin: 4px 0 8px;
   font-size: 1.1em;
   color: var(--dark-blue);
 }
@@ -64,9 +65,17 @@
 
 .description {
   color: gray;
+  margin: 8px;
 }
 @media only screen and (max-width: 600px) {
   .product-card {
     padding: 8px;
+    padding-bottom: 12px;
+  }
+  .product-card h2 {
+    font-size: 1rem;
+  }
+  .product-card p {
+    font-size: 1rem;
   }
 }

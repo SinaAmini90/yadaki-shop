@@ -36,12 +36,14 @@ export default function Cart() {
                 />
               ))}
             </ul>
-            <div className="cart-list cart-summary ">
-              <span>Total price: ${totalAmount.toFixed(2)}</span>
-              <Button cssClass="add-to-cart" textOnly={false}>
-                continue to checkout
-              </Button>
-            </div>
+            <section className="cart-list">
+              <div className="cart-summary">
+                <span>Total price: ${totalAmount.toFixed(2)}</span>
+                <Button cssClass="add-to-cart" textOnly={false}>
+                  continue to checkout
+                </Button>
+              </div>
+            </section>
           </>
         )}
       </section>
