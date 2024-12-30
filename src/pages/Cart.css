@@ -1,18 +1,21 @@
 .cart-container {
   text-align: center;
+  padding: 0 16px;
   min-height: 80vh;
 }
 .cart-list {
   box-sizing: border-box;
-  width: fit-content;
+  width: fill;
+  max-width: 1080px;
   list-style: none;
   padding: 0;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .cart-summary {
+  box-sizing: border-box;
   text-align: end;
-  width: 70vw;
+  width: fill;
   background-color: rgb(220, 220, 255);
   border-radius: 20px;
   padding: 15px;
@@ -26,6 +29,6 @@
 
 @media screen and (max-width: 700px) {
   .cart-summary {
-    width: 85vw;
+    min-width: 85vw;
   }
 }
