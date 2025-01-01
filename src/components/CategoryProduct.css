@@ -6,15 +6,18 @@
   width: 90vw;
 }
 .product-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   margin: auto;
+  padding: 8px;
   width: 16%;
   min-width: 200px;
   text-decoration: none;
   border-radius: 20px;
   transition: all ease;
   color: var(--dark-blue);
-  padding: 0;
-  padding-bottom: 25px;
 }
 .product-category:hover {
   background-color: rgb(240, 240, 255);
@@ -22,13 +25,14 @@
 
 .product-category img {
   height: auto;
-  width: 80%;
-  margin: 5%;
+  width: 85%;
+  margin-bottom: 8px;
   border-radius: 1000px;
   border: 4px solid transparent;
   background: linear-gradient(white, white) padding-box,
     linear-gradient(
         90deg,
+        var(--dark-blue),
         var(--dark-blue),
         var(--dark-blue),
         var(--orange),
