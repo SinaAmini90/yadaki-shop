@@ -5,6 +5,8 @@ import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Footer from "./components/Footer";
 import News from "./pages/News";
+import "./i18n";
+import { useTranslation } from "react-i18next";
 import { CartContextProvider } from "./store/CartContext";
 
 function App() {
