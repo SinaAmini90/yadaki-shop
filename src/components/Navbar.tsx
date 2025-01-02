@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../App.css";
 import "./Navbar.css";
+import { useTranslation } from "react-i18next";
 import {
   FaPhone,
   FaEnvelope,
@@ -16,6 +17,11 @@ import {
 const Navbar: React.FC<any> = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    i18n.changeLanguage(e.target.value);
+  };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -29,13 +35,19 @@ const Navbar: React.FC<any> = () => {
   return (
     <nav>
       <section className="navTop">
-        <address>
+        <div>
+          <select className="lang-select" onChange={changeLanguage}>
+            <option value="en">english</option>
+            <option value="fa">فارسی</option>
+            <option value="ar">العربية</option>
+          </select>
+        </div>
+        {/* <address>
           <FaPhone size={16} />
           <span className="nav-phone-number">09134237637</span>
-
           <FaEnvelope size={16} />
           <span>siyam1990@gmail.com</span>
-        </address>
+        </address> */}
         <div className="social-medias">
           <a
             href="https://facebook.com"
@@ -77,7 +89,7 @@ const Navbar: React.FC<any> = () => {
       <hr className="nav-hr" />
       <section className="navButtom">
         <div>
-          <h1>Website Name</h1>
+          <h1>{t("welcome")}</h1>
           <button onClick={toggleMenu}>
             <FaBars size={18} color="white" />
           </button>
@@ -96,7 +108,7 @@ const Navbar: React.FC<any> = () => {
                   isActive ? "nav-active" : undefined
                 }
               >
-                Home
+                {t("home")}
               </NavLink>
             </li>
             <li>
@@ -106,7 +118,7 @@ const Navbar: React.FC<any> = () => {
                   isActive ? "nav-active" : undefined
                 }
               >
-                Products
+                {t("products")}
               </NavLink>
             </li>
             <li>
@@ -116,7 +128,7 @@ const Navbar: React.FC<any> = () => {
                   isActive ? "nav-active" : undefined
                 }
               >
-                News
+                {t("articles")}
               </NavLink>
             </li>
             <li>
@@ -126,7 +138,7 @@ const Navbar: React.FC<any> = () => {
                   isActive ? "nav-active" : undefined
                 }
               >
-                Cart
+                {t("cart")}
               </NavLink>
             </li>
           </ul>

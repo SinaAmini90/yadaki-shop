@@ -29,6 +29,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .navButtom {
   color: aliceblue;
@@ -52,6 +53,13 @@ nav a:hover {
   border: right 1px solid white;
   padding: right 15px;
 }
+.lang-select {
+  width: fit-content;
+  padding: 4px 8px;
+  background-color: var(--dark-blue);
+  border: 1px dotted var(--orange);
+  color: #ddd;
+}
 
 nav button {
   display: none;
@@ -64,7 +72,14 @@ nav address {
   gap: 10px;
 }
 .social-medias a {
-  padding: 0 5px;
+  width: 18px;
+  height: 18px;
+}
+.social-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 .pages-nav ul {
   width: 100%;
