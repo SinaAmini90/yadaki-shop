@@ -1,7 +1,14 @@
 .section-title span {
   color: var(--orange);
 }
+.section-title p {
+  margin: 0;
+}
 .section-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
   padding-top: 20px;
   font-size: 2rem;
   font-weight: 600;
@@ -12,4 +19,7 @@
   text-transform: uppercase;
   border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
+}
+.section-title.fa {
+  flex-direction: row-reverse;
 }

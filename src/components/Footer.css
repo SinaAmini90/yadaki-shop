@@ -4,12 +4,13 @@
 }
 .footer-logo {
   text-align: center;
-  font-size: 1.2rem;
-  color: var(--orange);
+}
+.footer-logo img {
+  width: 50vw;
 }
 
 .footer address {
-  margin: 20px 20%;
+  margin: 8px 20% 20px;
   display: flex;
   min-width: 60%;
   justify-content: space-between;
@@ -59,7 +60,7 @@
 @media screen and (max-width: 800px) {
   .address-container {
     flex-direction: row;
-    width: 100%;
+    width: fit-content;
   }
   .footer address {
     margin: 20px 4%;
@@ -73,5 +74,8 @@
   }
   .footer address {
     flex-direction: column;
+  }
+  .footer-logo img {
+    width: 80vw;
   }
 }

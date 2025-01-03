@@ -5,8 +5,8 @@ nav li {
 nav h1 {
   color: var(--orange);
   margin: auto 0;
-  text-align: center;
-  font-size: 2em;
+  text-align: left;
+  font-size: 1.5em;
 }
 
 nav a {
@@ -82,6 +82,7 @@ nav address {
   gap: 8px;
 }
 .pages-nav ul {
+  padding: 0;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -101,7 +102,9 @@ nav address {
     height: 40px;
     padding: 0;
   }
-
+  nav h1 {
+    font-size: 1em;
+  }
   .pages-nav.open {
     display: flex !important;
     flex-direction: row;
