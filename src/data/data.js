@@ -52,23 +52,23 @@ const newsData = [
 const categoryData = [
   {
     image: "/images/dmICON.png",
-    title: "دسته موتور",
+    title: "engine mount",
   },
   {
     image: "/images/dtICON.png",
-    title: "درب ترموستات",
+    title: "thermostat housing",
   },
   {
     image: "/images/oringICON.png",
-    title: "واشر و اورینگ",
+    title: "gasket & O-Ring",
   },
   {
     image: "/images/btICON.png",
-    title: "بوش طبق",
+    title: "Suspension Bushing",
   },
   {
     image: "/images/meICON.png",
-    title: "منجید اگزوز",
+    title: "Exhaust Mounting Rubber",
   },
 ];
 
