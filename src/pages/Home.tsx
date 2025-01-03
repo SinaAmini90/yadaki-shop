@@ -4,24 +4,28 @@ import ArticlesSlick from "../components/ArticlesSlick";
 import CategoryProduct from "../components/CategoryProduct";
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const [t, i18n] = useTranslation();
+  const currentLang = i18n.language;
   return (
     <>
       <Hero />
-
-      <SectionTitle>
-        product <span>category</span>
+      <SectionTitle lang="en">
+        <p> {t("products")} </p>
+        <span>{t("category")}</span>
       </SectionTitle>
       <CategoryProduct />
 
-      <SectionTitle>
-        <span>Featured</span> Products
+      <SectionTitle lang="en">
+        <span>{t("featured")}</span> {t("products")}
       </SectionTitle>
       <ProductList featured />
 
-      <SectionTitle>
-        Last<span> Articles</span>
+      <SectionTitle lang={currentLang}>
+        {t("last")}
+        <span> {t("articles")}</span>
       </SectionTitle>
       <ArticlesSlick />
     </>

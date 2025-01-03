@@ -9,11 +9,15 @@ const Cart: React.FC<CartProps> = ({ item, addFunc, removeFunc }) => {
         <img src={item.image} alt={item.name} />
         <div className="cart-item-decription-container">
           <h3>{item.name}</h3>
-          <p>مناسب برای: {item.description.compatibleCar}</p>
+          <p>
+            {item.description.material}/{item.description.weight}گرم /مناسب برای{" "}
+            {item.description.compatibleCar}
+          </p>
         </div>
       </div>
       <div className="cart-item-price-container">
-        <p>Price: ${item.price.toFixed(2)}</p>
+        {/* <p>Price: ${item.price.toFixed(2)}</p> */}
+        <p>قیمت {item.price} تومان</p>
         <div className="cart-item-quantity-container">
           <Button
             cssClass="cart-quantity-button minus"
@@ -32,8 +36,11 @@ const Cart: React.FC<CartProps> = ({ item, addFunc, removeFunc }) => {
           </Button>
         </div>
       </div>
-      <p className="cart-item-total-price">
+      {/* <p className="cart-item-total-price">
         Total Price: ${(item.price * item.quantity).toFixed(2)}
+      </p>  */}
+      <p className="cart-item-total-price">
+        مجموع {item.price * item.quantity} تومان
       </p>
     </li>
   );

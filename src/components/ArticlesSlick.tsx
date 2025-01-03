@@ -56,7 +56,8 @@ export default function ArticlesSlick() {
                 <h3>{news.title}</h3>
                 <p className="slick-news-summery">
                   {news.summary}
-                  <br /> <a href="/news"> Read More ...</a>
+                  {/* <br /> <a href="/news"> Read More ...</a> */}
+                  <br /> <a href="/news"> ... ادامه مطلب</a>
                 </p>
               </div>
             ))}

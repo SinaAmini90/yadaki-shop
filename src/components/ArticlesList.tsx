@@ -20,8 +20,6 @@ export default function ArticlesDetailed() {
     if (!query) return text; // If there's no query, return the original text
 
     const parts = text.split(new RegExp(`(${query})`, "gi"));
-    console.log(parts);
-
     return parts.map((part, index) =>
       part.toLowerCase() === query.toLowerCase() ? (
         <span key={index} className="highlight">
@@ -44,7 +42,10 @@ export default function ArticlesDetailed() {
       </section>
       <div className="news-section">
         {searchedData.length === 0 ? (
-          <p className="no-results-message">Nothing matches "{searchQuery}"</p>
+          // <p className="no-results-message">Nothing matches "{searchQuery}"</p>
+          <p className="no-results-message">
+            مقاله ای با"{searchQuery}" یافت نشد
+          </p>
         ) : (
           searchedData.map((news, index) => (
             <article key={index} className="news-card">
@@ -57,7 +58,8 @@ export default function ArticlesDetailed() {
                   {highlightText(news.summary, searchQuery)}
                 </p>
                 <a href="/news" className="read-more-link">
-                  Read More...
+                  {/* Read More... */}
+                  ... ادامه مطلب
                 </a>
               </div>
             </article>

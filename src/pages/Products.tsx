@@ -4,7 +4,7 @@ import SectionTitle from "../components/SectionTitle";
 const Products = () => {
   return (
     <>
-      <SectionTitle>
+      <SectionTitle lang="fa">
         <span>All</span> Products
       </SectionTitle>
 

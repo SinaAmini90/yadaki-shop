@@ -16,7 +16,7 @@ export default function Cart() {
 
   return (
     <>
-      <SectionTitle>
+      <SectionTitle lang="fa">
         <span>Shopping</span> Cart
       </SectionTitle>
       <section className="cart-container">
