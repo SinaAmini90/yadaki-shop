@@ -49,3 +49,8 @@ export interface CartProps {
 export interface ProductListProps {
   featured: boolean;
 }
+
+export type SectionTitleProps = {
+  children: React.ReactNode;
+  lang: string;
+};

@@ -1,6 +1,7 @@
-import { ChildrenType } from "../types";
+import { SectionTitleProps } from "../types";
 import "./SectionTitle.css";
 
-export default function SectionTitle({ children }: ChildrenType) {
-  return <h2 className="section-title">{children}</h2>;
+export default function SectionTitle({ children, lang }: SectionTitleProps) {
+  const cssClass = "section-title " + lang;
+  return <h2 className={cssClass}>{children}</h2>;
 }
