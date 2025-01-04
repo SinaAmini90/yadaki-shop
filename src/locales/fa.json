@@ -4,7 +4,7 @@
   "home": "خانه",
   "products": "محصولات",
   "articles": "مقالات",
-  "cart": "سبد خرید",
+  "cart": "سبد",
   "category": "دسته‌بندی",
   "featured": "پربازدید",
   "last": "آخرین",
@@ -14,5 +14,12 @@
   "Suspension Bushing": "بوش طبق",
   "Exhaust Mounting Rubber": "منجید اگزوز",
   "companyName": "گروه صنعتی امینی",
-  "address": "اصفهان ملکشهر بهارستان غربی"
+  "address": "اصفهان ملکشهر بهارستان غربی",
+  "list": "لیست",
+  "Shopping": "خرید",
+  "empty-cart": "سبد خرید شما خالی است.",
+  "go-shoping": "خرید را شروع کنید!",
+  "checkout": "انتقال به صفحه پرداخت",
+  "total-price": ":مبلغ فاکتور",
+  "$": "تومان"
 }

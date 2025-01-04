@@ -14,5 +14,12 @@
   "Suspension Bushing": "Suspension Bushing",
   "Exhaust Mounting Rubber": "Exhaust Mounting Rubber",
   "companyName": "Amini Industrial Group",
-  "address": "west baharestan, malekshahr, isfahan, iran"
+  "address": "west baharestan, malekshahr, isfahan, iran",
+  "list": "List",
+  "Shopping": "Shopping",
+  "empty-cart": "Your cart is empty.",
+  "go-shoping": "Go shopping!",
+  "checkout": "continue to checkout",
+  "total-price": "Total price:",
+  "$": "$"
 }

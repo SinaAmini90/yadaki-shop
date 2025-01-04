@@ -5,10 +5,11 @@ import SectionTitle from "../components/SectionTitle";
 import "./Cart.css";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 export default function Cart() {
   const cartCtx = useContext(CartContext);
-
+  const [t, i18n] = useTranslation();
+  const currentLang = i18n.language;
   // Calculate total amount
   const totalAmount = cartCtx.items.reduce((sum, item) => {
     return sum + item.quantity * item.price;
@@ -16,13 +17,16 @@ export default function Cart() {
 
   return (
     <>
-      <SectionTitle lang="fa">
-        <span>Shopping</span> Cart
+      <SectionTitle lang="en">
+        <span>{t("Shopping")}</span> {t("cart")}
       </SectionTitle>
       <section className="cart-container">
         {cartCtx.items.length === 0 ? (
           <h3>
-            Your cart is empty. <Link to="/products">Go shopping!</Link>
+            {t("empty-cart")}{" "}
+            <Link className={currentLang} to="/products">
+              {t("go-shoping")}
+            </Link>
           </h3>
         ) : (
           <>
@@ -38,9 +42,19 @@ export default function Cart() {
             </ul>
             <section className="cart-list">
               <div className="cart-summary">
-                <span>Total price: ${totalAmount.toFixed(2)}</span>
+                <span className={currentLang}>
+                  <span>{t("total-price")}</span>
+                  <span className={currentLang}>
+                    <span>
+                      {currentLang === "en"
+                        ? totalAmount.toFixed(2)
+                        : totalAmount}
+                    </span>
+                    <span> {t("$")}</span>
+                  </span>
+                </span>
                 <Button cssClass="add-to-cart" textOnly={false}>
-                  continue to checkout
+                  {t("checkout")}
                 </Button>
               </div>
             </section>
