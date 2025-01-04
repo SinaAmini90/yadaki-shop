@@ -1,17 +1,22 @@
 import "./CartItems.css";
 import Button from "./Button";
 import { CartProps } from "../types";
-
+import { useTranslation } from "react-i18next";
 const Cart: React.FC<CartProps> = ({ item, addFunc, removeFunc }) => {
+  const { i18n } = useTranslation();
+
+  type SupportedLang = "en" | "fa" | "ar";
+  const currentLang: SupportedLang = i18n.language as SupportedLang;
+
   return (
     <li className="cart-item" key={item.id}>
       <div className="cart-item-img-title-container">
-        <img src={item.image} alt={item.name} />
+        <img src={item.image} alt={item.name[currentLang]} />
         <div className="cart-item-decription-container">
-          <h3>{item.name}</h3>
+          <h3>{item.name[currentLang]}</h3>
           <p>
-            {item.description.material}/{item.description.weight}گرم /مناسب برای{" "}
-            {item.description.compatibleCar}
+            {item.description.material[currentLang]}/{item.description.weight}
+            گرم /مناسب برای {item.description.compatibleCar[currentLang]}
           </p>
         </div>
       </div>

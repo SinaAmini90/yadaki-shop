@@ -5,8 +5,8 @@ const Products = () => {
   const [t] = useTranslation();
   return (
     <>
-      <SectionTitle lang="fa">
-        <span>{t("list")}</span> {t("products")}
+      <SectionTitle lang="en">
+        {t("products")} <span>{t("list")}</span>
       </SectionTitle>
 
       <ProductList featured={false} />
