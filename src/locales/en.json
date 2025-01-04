@@ -21,5 +21,7 @@
   "go-shoping": "Go shopping!",
   "checkout": "continue to checkout",
   "total-price": "Total price:",
-  "$": "$"
+  "$": "$",
+  "search": "search",
+  "all-category": "All Categories"
 }
