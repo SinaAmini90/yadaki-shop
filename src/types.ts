@@ -1,14 +1,22 @@
 import { ReactNode } from "react";
+
+export type SupportedLang = "en" | "fa" | "ar";
+
+type MultiLangString = {
+  fa: string;
+  en: string;
+  ar: string;
+};
 type Description = {
-  material: string;
+  material: MultiLangString;
   weight: number;
-  productionMethod: string;
-  compatibleCar: string;
+  productionMethod: MultiLangString;
+  compatibleCar: MultiLangString;
 };
 export type ProductItem = {
   id: number;
-  category: string;
-  name: string;
+  category: MultiLangString;
+  name: MultiLangString;
   description: Description;
   price: number;
   quantity: number;
