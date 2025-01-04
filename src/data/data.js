@@ -49,26 +49,69 @@ const newsData = [
   },
 ];
 
+// const categoryData = [
+//   {
+//     image: "/images/dmICON.png",
+//     title: "engine mount",
+//   },
+//   {
+//     image: "/images/dtICON.png",
+//     title: "thermostat housing",
+//   },
+//   {
+//     image: "/images/oringICON.png",
+//     title: "gasket & O-Ring",
+//   },
+//   {
+//     image: "/images/btICON.png",
+//     title: "Suspension Bushing",
+//   },
+//   {
+//     image: "/images/meICON.png",
+//     title: "Exhaust Mounting Rubber",
+//   },
+// ];
+
 const categoryData = [
   {
     image: "/images/dmICON.png",
-    title: "engine mount",
+    title: {
+      fa: "دسته موتور",
+      en: "Engine Mount",
+      ar: "دعامات المحرك",
+    },
   },
   {
     image: "/images/dtICON.png",
-    title: "thermostat housing",
+    title: {
+      fa: "درب ترموستات",
+      en: "Thermostat Housing",
+      ar: "غطاء الترموستات",
+    },
   },
   {
     image: "/images/oringICON.png",
-    title: "gasket & O-Ring",
+    title: {
+      fa: "گسکت و O-Ring",
+      en: "Gasket & O-Ring",
+      ar: "حشية وحلقة O",
+    },
   },
   {
     image: "/images/btICON.png",
-    title: "Suspension Bushing",
+    title: {
+      fa: "بوش معلق",
+      en: "Suspension Bushing",
+      ar: "محمل التعليق",
+    },
   },
   {
     image: "/images/meICON.png",
-    title: "Exhaust Mounting Rubber",
+    title: {
+      fa: "منجید اگزوز",
+      en: "Exhaust Mounting Rubber",
+      ar: "مطاط تركيب العادم",
+    },
   },
 ];
 
