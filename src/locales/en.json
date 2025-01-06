@@ -23,5 +23,12 @@
   "total-price": "Total price:",
   "$": "$",
   "search": "search",
-  "all-category": "All Categories"
+  "all-category": "All Categories",
+  "g": "g",
+  "price": "Rate",
+  "total": "Total",
+  "read-more": "Read-more ...",
+  "all": "All",
+  "Add-to-Cart": "Add to Cart",
+  "select-lang": "Language"
 }

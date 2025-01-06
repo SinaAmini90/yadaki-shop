@@ -20,8 +20,15 @@
   "empty-cart": "عربتك فارغة.",
   "go-shoping": "ابدأ التسوق!",
   "checkout": "استمر إلى الدفع",
-  "total-price": "إجمالي السعر:",
+  "total-price": "المجموع:",
   "$": "$",
   "search": "بحث",
-  "all-category": "جميع الفئات"
+  "all-category": "جميع الفئات",
+  "g": "غرام",
+  "price": "السعر",
+  "total": "المبلغ",
+  "read-more": "...اقرأ المزيد",
+  "all": "جميع",
+  "Add-to-Cart": "أضف إلى السلة",
+  "select-lang": "لغة الموقع"
 }
