@@ -38,7 +38,7 @@ const Navbar: React.FC<any> = () => {
         <div>
           {/* <FaLanguage size={16} color="white" /> */}
           <select className="lang-select" onChange={changeLanguage}>
-            <option value="select"> A ↔ الف</option>
+            <option value="fa"> A ↔ الف</option>
             <option value="en">english</option>
             <option value="fa">فارسی</option>
             <option value="ar">العربية</option>
