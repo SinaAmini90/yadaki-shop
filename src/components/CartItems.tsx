@@ -1,19 +1,31 @@
 import "./CartItems.css";
 import Button from "./Button";
 import { CartProps } from "../types";
-
+import { useTranslation } from "react-i18next";
+import { t } from "i18next";
 const Cart: React.FC<CartProps> = ({ item, addFunc, removeFunc }) => {
+  const { i18n } = useTranslation();
+
+  type SupportedLang = "en" | "fa" | "ar";
+  const currentLang: SupportedLang = i18n.language as SupportedLang;
+
   return (
     <li className="cart-item" key={item.id}>
       <div className="cart-item-img-title-container">
-        <img src={item.image} alt={item.name} />
+        <img src={item.image} alt={item.name[currentLang]} />
         <div className="cart-item-decription-container">
-          <h3>{item.name}</h3>
-          <p>مناسب برای: {item.description.compatibleCar}</p>
+          <h3 className={currentLang}>{item.name[currentLang]}</h3>
+          <p className={currentLang}>
+            {item.description.material[currentLang]} / {item.description.weight}
+            {t("g")} / {item.description.compatibleCar[currentLang]}
+          </p>
         </div>
       </div>
       <div className="cart-item-price-container">
-        <p>Price: ${item.price.toFixed(2)}</p>
+        <p className={currentLang}>
+          {t("price")}{" "}
+          {currentLang === "fa" ? item.price : item.price.toFixed(2)} {t("$")}
+        </p>
         <div className="cart-item-quantity-container">
           <Button
             cssClass="cart-quantity-button minus"
@@ -32,9 +44,15 @@ const Cart: React.FC<CartProps> = ({ item, addFunc, removeFunc }) => {
           </Button>
         </div>
       </div>
-      <p className="cart-item-total-price">
-        Total Price: ${(item.price * item.quantity).toFixed(2)}
-      </p>
+      <div className="cart-item-total-price">
+        <p className={currentLang}>
+          {t("total")}{" "}
+          {currentLang === "fa"
+            ? item.price * item.quantity
+            : (item.price * item.quantity).toFixed(2)}{" "}
+          {t("$")}
+        </p>
+      </div>
     </li>
   );
 };

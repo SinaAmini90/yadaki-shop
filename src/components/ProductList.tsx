@@ -3,13 +3,17 @@ import { useState, useMemo, useEffect } from "react";
 import { categoryData } from "../data/data.js";
 import productsData from "../data/productsData.js";
 import Product from "./Product";
-import { ProductListProps } from "../types";
+import { ProductListProps, SupportedLang } from "../types";
 import { NavLink, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const ProductList: React.FC<ProductListProps> = ({ featured }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const { state } = useLocation();
+  const [t, i18n] = useTranslation();
+
+  const currentLang: SupportedLang = i18n.language as SupportedLang;
 
   useEffect(() => {
     if (state?.selectedCategory) {
@@ -25,14 +29,18 @@ const ProductList: React.FC<ProductListProps> = ({ featured }) => {
   const filteredProducts = useMemo(() => {
     return selectedCategory === "all"
       ? productsData.filter((product) =>
-          product.name.toLowerCase().includes(searchQuery.toLowerCase())
+          product.name[currentLang]
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase())
         )
       : productsData.filter(
           (product) =>
-            product.category === selectedCategory &&
-            product.name.toLowerCase().includes(searchQuery.toLowerCase())
+            product.category[currentLang] === selectedCategory &&
+            product.name[currentLang]
+              .toLowerCase()
+              .includes(searchQuery.toLowerCase())
         );
-  }, [selectedCategory, productsData, searchQuery]);
+  }, [selectedCategory, searchQuery, currentLang]);
 
   return (
     <div className={featured ? "featured-products" : "article-container"}>
@@ -47,9 +55,13 @@ const ProductList: React.FC<ProductListProps> = ({ featured }) => {
           value={selectedCategory}
           onChange={(event) => setSelectedCategory(event.target.value)}
         >
-          <option value="all">All Categories</option>
+          <option value="all">{t("all-category")}</option>
           {categoryData.map((category) => {
-            return <option value={category.title}>{category.title}</option>;
+            return (
+              <option value={category.title[currentLang]}>
+                {category.title[currentLang]}
+              </option>
+            );
           })}
         </select>
       </section>
@@ -60,9 +72,9 @@ const ProductList: React.FC<ProductListProps> = ({ featured }) => {
           ))}
         </ul>
         <NavLink to="/products" id="all-products">
-          All
+          {t("all")}
           <br />
-          products
+          {t("products")}
         </NavLink>
       </div>
     </div>

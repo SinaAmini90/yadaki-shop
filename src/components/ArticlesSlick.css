@@ -18,9 +18,10 @@
 }
 
 .slick-news-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+  width: fill;
+  height: 168px;
+  border-radius: 8px;
+  border: 1px dotted var(--dark-blue);
 }
 .slick-news-summery {
   text-align: justify;

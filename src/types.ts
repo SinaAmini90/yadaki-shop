@@ -1,14 +1,22 @@
 import { ReactNode } from "react";
+
+export type SupportedLang = "en" | "fa" | "ar";
+
+type MultiLangString = {
+  fa: string;
+  en: string;
+  ar: string;
+};
 type Description = {
-  material: string;
+  material: MultiLangString;
   weight: number;
-  productionMethod: string;
-  compatibleCar: string;
+  productionMethod: MultiLangString;
+  compatibleCar: MultiLangString;
 };
 export type ProductItem = {
   id: number;
-  category: string;
-  name: string;
+  category: MultiLangString;
+  name: MultiLangString;
   description: Description;
   price: number;
   quantity: number;
@@ -33,6 +41,12 @@ export interface ChildrenType {
   children: ReactNode;
 }
 
+export interface ArticleType {
+  title: MultiLangString;
+  image: string;
+  summary: MultiLangString;
+  fullText: MultiLangString;
+}
 //prop types
 export interface ButtonProps {
   textOnly: boolean;
@@ -49,3 +63,8 @@ export interface CartProps {
 export interface ProductListProps {
   featured: boolean;
 }
+
+export type SectionTitleProps = {
+  children: React.ReactNode;
+  lang: string;
+};

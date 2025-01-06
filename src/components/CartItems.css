@@ -25,6 +25,7 @@
   align-items: center;
 }
 .cart-item-decription-container {
+  display: grid;
   text-align: start;
   margin: 0px 16px 4px 0px !important;
 }

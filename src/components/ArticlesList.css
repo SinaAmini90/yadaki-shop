@@ -1,5 +1,5 @@
 .article-container {
-  max-width: 1200px;
+  max-width: 1260px;
   margin: auto;
   padding: 0 28px 28px;
 }
@@ -54,7 +54,7 @@
 
 select,
 input[type="text"] {
-  width: fill;
+  width: full;
   max-width: 800px;
   padding: 10px 15px;
   font-size: 16px;
@@ -106,6 +106,7 @@ input[type="text"]::placeholder {
   }
   select,
   input[type="text"] {
+    width: 28vw;
     max-width: 400px;
   }
 

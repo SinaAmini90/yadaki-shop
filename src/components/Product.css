@@ -15,7 +15,8 @@
 }
 
 .product-image {
-  width: fill;
+  width: 130px;
+  height: auto;
 }
 
 .product-name {
@@ -37,6 +38,7 @@
 }
 
 .add-to-cart {
+  font-family: vazir, monospace;
   background-color: #28a745;
   color: white;
   border: none;
