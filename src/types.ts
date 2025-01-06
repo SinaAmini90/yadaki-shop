@@ -41,6 +41,12 @@ export interface ChildrenType {
   children: ReactNode;
 }
 
+export interface ArticleType {
+  title: MultiLangString;
+  image: string;
+  summary: MultiLangString;
+  fullText: MultiLangString;
+}
 //prop types
 export interface ButtonProps {
   textOnly: boolean;
