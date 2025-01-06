@@ -288,7 +288,7 @@ const productsData = [
     category: {
       fa: "دسته موتور",
       en: "Engine Mount",
-      ar: "تركيب المحرك",
+      ar: "دعامات المحرك",
     },
     name: {
       fa: "دسته موتور پایین راست رانا",
@@ -322,7 +322,7 @@ const productsData = [
     category: {
       fa: "دسته موتور",
       en: "Engine Mount",
-      ar: "تركيب المحرك",
+      ar: "دعامات المحرك",
     },
     name: {
       fa: "دسته موتور پایین راست سمند EF7",
@@ -356,7 +356,7 @@ const productsData = [
     category: {
       fa: "دسته موتور",
       en: "Engine Mount",
-      ar: "تركيب المحرك",
+      ar: "دعامات المحرك",
     },
     name: {
       fa: "دسته موتور پایین راست پژو 206 تیپ 5 و 6",
@@ -389,13 +389,13 @@ const productsData = [
     id: 4,
     category: {
       fa: "واشر و اورینگ",
-      en: "O-rings and Washers",
-      ar: "الحشوات والأورينغ",
+      en: "Gasket & O-Ring",
+      ar: "الحشوات و الأورينغ",
     },
     name: {
       fa: "اورینگ دریچه گاز رنو L90",
       en: "Throttle O-ring for Renault L90",
-      ar: "أوريينغ لThrottle لرينو L90",
+      ar: "أوريينغ ترموستات لرينو L90",
     },
     price: 0,
     image: "/images/ORingL90.png",
@@ -423,42 +423,8 @@ const productsData = [
     id: 5,
     category: {
       fa: "واشر و اورینگ",
-      en: "O-rings and Washers",
-      ar: "الحشوات والأورينغ",
-    },
-    name: {
-      fa: "اورینگ ترموستات پژو",
-      en: "Thermostat O-ring for Peugeot",
-      ar: "أوريينغ ترموستات لبيجو",
-    },
-    price: 0,
-    image: "/images/PEJOThermostatO-ring.png",
-    description: {
-      material: {
-        fa: "لاستیک",
-        en: "Rubber",
-        ar: "مطاط",
-      },
-      weight: 4,
-      productionMethod: {
-        fa: "پرس",
-        en: "Pressing",
-        ar: "ضغط",
-      },
-      compatibleCar: {
-        fa: "پژو",
-        en: "Peugeot",
-        ar: "بيجو",
-      },
-    },
-    quantity: 0,
-  },
-  {
-    id: 5,
-    category: {
-      fa: "واشر و اورینگ",
-      en: "O-rings and Washers",
-      ar: "الحشوات والأورينغ",
+      en: "Gasket & O-Ring",
+      ar: "الحشوات و الأورينغ",
     },
     name: {
       fa: "اورینگ ترموستات پژو",
@@ -491,12 +457,12 @@ const productsData = [
     id: 6,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
       fa: "درب ترموستات پراید کاربراتوری",
-      en: "Thermostat Cover for Carburetor Pride",
+      en: "Thermostat Housing for Carburetor Pride",
       ar: "غطاء الترموستات لبرادو كاربيوريتوري",
     },
     price: 0,
@@ -525,12 +491,12 @@ const productsData = [
     id: 7,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
       fa: "درب ترموستات پیکان",
-      en: "Thermostat Cover for Peykan",
+      en: "Thermostat Housing for Peykan",
       ar: "غطاء الترموستات لبيكان",
     },
     price: 0,
@@ -559,12 +525,12 @@ const productsData = [
     id: 8,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
       fa: "درب ترموستات رنو L90 فابریک",
-      en: "Thermostat Cover for Renault L90 Original",
+      en: "Thermostat Housing for Renault L90 Original",
       ar: "غطاء الترموستات لرانيو L90 اصلي",
     },
     price: 0,
@@ -593,12 +559,12 @@ const productsData = [
     id: 9,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
       fa: "درب ترموستات رنو L90 آلومینیومی",
-      en: "Aluminum Thermostat Cover for Renault L90",
+      en: "Aluminum Thermostat Housing for Renault L90",
       ar: "غطاء الترموستات الألومنيوم لرانيو L90",
     },
     price: 0,
@@ -628,7 +594,7 @@ const productsData = [
     category: {
       fa: "دسته موتور",
       en: "Engine Mount",
-      ar: "تركيب المحرك",
+      ar: "دعامات المحرك",
     },
     name: {
       fa: "دسته موتور پا مرغی رنو L90",
@@ -661,8 +627,8 @@ const productsData = [
     id: 11,
     category: {
       fa: "بوش طبق",
-      en: "Control Arm Bushing",
-      ar: "دعامات الذراع المتحكم",
+      en: "Suspension Bushing",
+      ar: "محمل التعليق",
     },
     name: {
       fa: "بوش طبق جناقی پژو",
@@ -695,12 +661,12 @@ const productsData = [
     id: 12,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
       fa: "درب ترموستات سمند EF7",
-      en: "Thermostat Cover for Samand EF7",
+      en: "Thermostat Housing for Samand EF7",
       ar: "غطاء الترموستات لسمند EF7",
     },
     price: 0,
@@ -729,7 +695,7 @@ const productsData = [
     id: 13,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
@@ -763,12 +729,12 @@ const productsData = [
     id: 14,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
       fa: "درب ترموستات وانت نیسان",
-      en: "Thermostat Cover for Nissan Pickup",
+      en: "Thermostat Housing for Nissan Pickup",
       ar: "غطاء الترموستات لسيارة نيسان بيك اب",
     },
     price: 0,
@@ -797,12 +763,12 @@ const productsData = [
     id: 15,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
       fa: "درب ترموستات پراید یورو 4",
-      en: "Thermostat Cover for Euro 4 Pride",
+      en: "Thermostat Housing for Euro 4 Pride",
       ar: "غطاء الترموستات لبرادو يورو 4",
     },
     price: 0,
@@ -831,8 +797,8 @@ const productsData = [
     id: 16,
     category: {
       fa: "منجید اگزوز",
-      en: "Exhaust Clamp",
-      ar: "مشبك العادم",
+      en: "Exhaust Mounting Rubber",
+      ar: "مطاط تركيب العادم",
     },
     name: {
       fa: "بست لاستیکی اگزوز پراید",
@@ -865,12 +831,12 @@ const productsData = [
     id: 17,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
       fa: "درب ترموستات پژو 405 انژکتوری",
-      en: "Thermostat Cover for Peugeot 405 Injector",
+      en: "Thermostat Housing for Peugeot 405 Injector",
       ar: "غطاء الترموستات لبيجو 405 انجيكتور",
     },
     price: 0,
@@ -933,12 +899,12 @@ const productsData = [
     id: 19,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
       fa: "درب ترموستات پژو 206 تیپ 5 و 6",
-      en: "Thermostat Cover for Peugeot 206 Tip 5 and 6",
+      en: "Thermostat Housing for Peugeot 206 Tip 5 and 6",
       ar: "غطاء الترموستات لبيجو 206 طراز 5 و 6",
     },
     price: 0,
@@ -967,12 +933,12 @@ const productsData = [
     id: 20,
     category: {
       fa: "درب ترموستات",
-      en: "Thermostat Cover",
+      en: "Thermostat Housing",
       ar: "غطاء الترموستات",
     },
     name: {
       fa: "درب ترموستات پژو 206 تیپ 2 و 3",
-      en: "Thermostat Cover for Peugeot 206 Tip 2 and 3",
+      en: "Thermostat Housing for Peugeot 206 Tip 2 and 3",
       ar: "غطاء الترموستات لبيجو 206 طراز 2 و 3",
     },
     price: 0,

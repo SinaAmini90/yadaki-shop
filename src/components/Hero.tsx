@@ -15,18 +15,28 @@ export default function Hero() {
     arrows: true,
     cssEase: "linear",
   };
+  const vw = window.innerWidth;
   return (
     <div className="hero">
       <div className="slider-container">
         <Slider {...heroSliderSettings}>
           <div>
-            <img src="/images/banner1.jpg" alt="Banner 1" />
+            <img
+              src={vw > 600 ? "/images/banner1.jpg" : "/images/banner1Mob.jpg"}
+              alt="Banner 1"
+            />
           </div>
           <div>
-            <img src="/images/banner2.jpg" alt="banner 2" />
+            <img
+              src={vw > 600 ? "/images/banner2.jpg" : "/images/banner2Mob.jpg"}
+              alt="banner 2"
+            />
           </div>
           <div>
-            <img src="/images/banner3.jpg" alt="banner 3" />
+            <img
+              src={vw > 600 ? "/images/banner3.jpg" : "/images/banner3Mob.jpg"}
+              alt="banner 3"
+            />
           </div>
         </Slider>
       </div>

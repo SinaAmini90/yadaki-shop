@@ -1,4 +1,5 @@
 import { ButtonProps } from "../types";
+import "../App.css";
 
 const Button: React.FC<ButtonProps> = ({
   textOnly,

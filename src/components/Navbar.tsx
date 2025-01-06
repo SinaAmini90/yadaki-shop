@@ -12,6 +12,7 @@ import {
   FaInstagram,
   FaYoutube,
   FaBars,
+  FaLanguage,
 } from "react-icons/fa";
 
 const Navbar: React.FC<any> = () => {
@@ -31,12 +32,13 @@ const Navbar: React.FC<any> = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
   return (
     <nav>
       <section className="navTop">
         <div>
+          {/* <FaLanguage size={16} color="white" /> */}
           <select className="lang-select" onChange={changeLanguage}>
+            <option value="select"> A ↔ الف</option>
             <option value="en">english</option>
             <option value="fa">فارسی</option>
             <option value="ar">العربية</option>

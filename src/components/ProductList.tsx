@@ -72,9 +72,9 @@ const ProductList: React.FC<ProductListProps> = ({ featured }) => {
           ))}
         </ul>
         <NavLink to="/products" id="all-products">
-          All
+          {t("all")}
           <br />
-          products
+          {t("products")}
         </NavLink>
       </div>
     </div>

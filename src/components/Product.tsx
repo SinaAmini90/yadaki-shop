@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 
 const Product: React.FC<ProductItem> = ({ ...props }) => {
   const cartCtx = useContext(CartContext);
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   type SupportedLang = "en" | "fa" | "ar";
   const currentLang: SupportedLang = i18n.language as SupportedLang;
@@ -33,7 +33,12 @@ const Product: React.FC<ProductItem> = ({ ...props }) => {
         <p className="description">{props.description.material[currentLang]}</p>
       </div>
       <div>
-        <p className="product-price">${props.price.toFixed(2)}</p>
+        <p className={"product-price " + currentLang}>
+          <span> {t("$")} </span>
+          <span>
+            {currentLang === "fa" ? props.price : props.price.toFixed(2)}{" "}
+          </span>
+        </p>
         {itemQuantity ? (
           <div className="product-quantity-container">
             <Button
@@ -58,7 +63,7 @@ const Product: React.FC<ProductItem> = ({ ...props }) => {
             cssClass="add-to-cart"
             textOnly={false}
           >
-            Add to Cart
+            {t("Add-to-Cart")}
           </Button>
         )}
       </div>

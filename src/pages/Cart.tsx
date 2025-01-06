@@ -43,15 +43,9 @@ export default function Cart() {
             <section className="cart-list">
               <div className="cart-summary">
                 <span className={currentLang}>
-                  <span>{t("total-price")}</span>
-                  <span className={currentLang}>
-                    <span>
-                      {currentLang === "en"
-                        ? totalAmount.toFixed(2)
-                        : totalAmount}
-                    </span>
-                    <span> {t("$")}</span>
-                  </span>
+                  {t("total-price")}{" "}
+                  {currentLang === "en" ? totalAmount.toFixed(2) : totalAmount}{" "}
+                  {t("$")}
                 </span>
                 <Button cssClass="add-to-cart" textOnly={false}>
                   {t("checkout")}

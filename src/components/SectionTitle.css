@@ -20,6 +20,6 @@
   border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
 }
-.section-title.fa {
+.section-title.fa-title {
   flex-direction: row-reverse;
 }
