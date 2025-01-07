@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/yadakiOnlineShop/static/css/main.00781028.css",
-    "main.js": "/yadakiOnlineShop/static/js/main.f1b3d76d.js",
-    "static/js/453.34f4b0a9.chunk.js": "/yadakiOnlineShop/static/js/453.34f4b0a9.chunk.js",
-    "static/media/slick.svg": "/yadakiOnlineShop/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/yadakiOnlineShop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/yadakiOnlineShop/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/yadakiOnlineShop/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/yadakiOnlineShop/index.html",
-    "main.00781028.css.map": "/yadakiOnlineShop/static/css/main.00781028.css.map",
-    "main.f1b3d76d.js.map": "/yadakiOnlineShop/static/js/main.f1b3d76d.js.map",
-    "453.34f4b0a9.chunk.js.map": "/yadakiOnlineShop/static/js/453.34f4b0a9.chunk.js.map"
+    "main.css": "/yadaki-shop/static/css/main.7618f395.css",
+    "main.js": "/yadaki-shop/static/js/main.096cc144.js",
+    "static/js/453.34f4b0a9.chunk.js": "/yadaki-shop/static/js/453.34f4b0a9.chunk.js",
+    "static/media/slick.svg": "/yadaki-shop/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/yadaki-shop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/yadaki-shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/yadaki-shop/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/yadaki-shop/index.html",
+    "main.7618f395.css.map": "/yadaki-shop/static/css/main.7618f395.css.map",
+    "main.096cc144.js.map": "/yadaki-shop/static/js/main.096cc144.js.map",
+    "453.34f4b0a9.chunk.js.map": "/yadaki-shop/static/js/453.34f4b0a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00781028.css",
-    "static/js/main.f1b3d76d.js"
+    "static/css/main.7618f395.css",
+    "static/js/main.096cc144.js"
   ]
 }
