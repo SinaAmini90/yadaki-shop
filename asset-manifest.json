@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/yadaki-shop/static/css/main.7618f395.css",
+    "main.css": "/yadaki-shop/static/css/main.1d6498f6.css",
     "main.js": "/yadaki-shop/static/js/main.48bbfd36.js",
     "static/js/453.34f4b0a9.chunk.js": "/yadaki-shop/static/js/453.34f4b0a9.chunk.js",
     "static/media/slick.svg": "/yadaki-shop/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -8,12 +8,12 @@
     "static/media/slick.ttf": "/yadaki-shop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/yadaki-shop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/yadaki-shop/index.html",
-    "main.7618f395.css.map": "/yadaki-shop/static/css/main.7618f395.css.map",
+    "main.1d6498f6.css.map": "/yadaki-shop/static/css/main.1d6498f6.css.map",
     "main.48bbfd36.js.map": "/yadaki-shop/static/js/main.48bbfd36.js.map",
     "453.34f4b0a9.chunk.js.map": "/yadaki-shop/static/js/453.34f4b0a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7618f395.css",
+    "static/css/main.1d6498f6.css",
     "static/js/main.48bbfd36.js"
   ]
 }
